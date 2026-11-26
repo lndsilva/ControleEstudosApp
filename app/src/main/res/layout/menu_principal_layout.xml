@@ -19,4 +19,15 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCadastrarEstudos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:backgroundTint="#848181"
+        android:text="Cadastrar Estudos"
+        android:textColor="#000"
+        android:textSize="24sp"
+        app:cornerRadius="5dp" />
+
 </LinearLayout>
