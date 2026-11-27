@@ -14,37 +14,56 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_margin="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="40sp"
         android:text="Cadastrar Estudos"
         android:textAllCaps="true"
         android:textColor="#000"
         android:textSize="24sp"
         android:textStyle="bold" />
 
+    <TextView
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Disciplina" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Disciplina">
+        android:layout_marginBottom="30sp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Atividade" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:hint="Atividade">
+        android:layout_marginBottom="30sp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="140dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Horas estudadas" />
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Horas estudadas">
+        android:layout_marginBottom="30sp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
@@ -52,18 +71,19 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
+        android:gravity="center_horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <com.google.android.material.button.MaterialButton
+            android:layout_marginRight="20sp"
             android:id="@+id/btnSalvar"
             android:layout_width="140sp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="5dp"
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
-            android:layout_weight="1"
             android:backgroundTint="#848181"
             android:text="Salvar"
             android:textAllCaps="true"
@@ -72,13 +92,13 @@
             app:cornerRadius="5dp" />
 
         <com.google.android.material.button.MaterialButton
+            android:layout_marginLeft="20sp"
             android:id="@+id/btnLimpar"
             android:layout_width="140sp"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:layout_marginRight="5dp"
             android:layout_marginBottom="10dp"
-            android:layout_weight="1"
             android:backgroundTint="#848181"
             android:text="Limpar"
             android:textAllCaps="true"
@@ -94,7 +114,7 @@
         android:layout_margin="20sp"
         android:text="@string/voltar_ao_menu"
         android:textColor="#000"
-        android:textSize="24sp"
-        android:textStyle="bold" />
+        android:textSize="24sp" />
+
 
 </LinearLayout>
